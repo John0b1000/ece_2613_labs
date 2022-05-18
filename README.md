@@ -1,55 +1,14 @@
-# 2613_2021s
-Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
+# ECE 2613 Laboratory Setup Instructions
 
-Server Address: `ece-000.eng.temple.edu`
+## Step 1: Install Visual Studio Code
 
-Login to in your aws cloud 9
-```
-git clone -b fall2021 https://github.com/lbaitemple/ece2613
-```
+## Step 2: Add VS Code Extensions
 
-### step 1: check your path
-```
-which npm
-echo $PATH
-```
-### step 2: add npm into your PATH
-```
-echo "PATH=$HOME/.c9/node/bin:\$PATH" >> ~/.bashrc
-source ~/.bashrc
-```
-Now check if npm is in the path
-```
-which npm 
-```
+## Step 3: Login to Temple's AWS Server
 
-### step 3: install github fetcher
-You may want to install fetcher by typing the following commands from a command terminal window
-```
-npm install -g github-files-fetcher
-```
+AWS Server IP Address: `ece-000.eng.temple.edu`
 
-### step 4: download a github folder
-After that, you can download the lab 2 folder by typing
-```
-rm -rf lab2
-fetcher --url="https://github.com/lbaitemple/2613_2020f/tree/master/lab2"
-```
+## Step 4: Setup SSH Keys
 
-### step 5: zip the file (for example in lab4)
-```
-cd lab4
-zip lab4.zip run_hf.bat output_files/*.sof
-```
+## Step 5: Final Configurations
 
-### terminal commands
-```
-$ECE2612/backdoor/simulate svn_seg_decoder
-$ECE2612/backdoor/synthesize lab3_top_io_wrapper
-```
-
-Simulation - Modelsim simulator (only the basename is used)
-```
-$ECE2612/backdoor/ms_simulate svn_seg_decoder
-$ECE2612/backdoor/q_synthesize lab3_top_io_wrapper
-```
